@@ -1,11 +1,9 @@
-install: install-deps
-	npx simple-git-hooks
+install: 
+	npm ci
+	npm link
 
 run:
 	bin/nodejs-package.js 10
-
-install-deps:
-	npm ci
 
 test:
 	npm test
