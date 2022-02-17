@@ -25,7 +25,7 @@ const genDiff = (filepath1, filepath2) => {
     const value2 = _.get(object2, key);
 
     if (value1 === value2) {
-      return [...acc, [` ${key}`, value1]];
+      return [...acc, [`  ${key}`, value1]];
     }
 
     return [
@@ -37,7 +37,7 @@ const genDiff = (filepath1, filepath2) => {
     .filter(([, value]) => value !== undefined)
     .map(([key, value]) => `  ${key}: ${value}`).join('\n');
 
-  return `{\n ${diff} \n}`;
+  return `{\n${diff} \n}`;
 };
 
 export default genDiff;

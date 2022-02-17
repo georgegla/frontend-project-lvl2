@@ -16,3 +16,6 @@ lint:
 
 publish:
 	npm publish
+ with:
+    coverageCommand: make test-coverage
+    debug: true
