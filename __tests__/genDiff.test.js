@@ -1,6 +1,6 @@
 import { test, expect } from '@jest/globals';
 import { fileURLToPath } from 'url';
-import { dirname, path } from 'path';
+import  path, { dirname } from 'path';
 
 // eslint-disable-next-line import/no-named-as-default-member
 import genDiff from '../src/genDiff.js';

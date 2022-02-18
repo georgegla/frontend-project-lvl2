@@ -7,15 +7,16 @@ run:
 
 test:
 	npm test
-
-test-coverage:
-	npm test -- --coverage --coverageProvider=v8
-
 lint:
 	npx eslint .
 
 publish:
-	npm publish
+	npm publish --dry-run
  with:
-      coverageCommand: make test-coverage
     debug: true
+test-coverage:
+ 	NODE_OPTIONS=--experimental-vm-modules npx jest --coverageъ
+test-watch:
+	NODE_OPTIONS=--experimental-vm-modules npx jest --watch
+test:
+	NODE_OPTIONS=--experimental-vm-modules npx jest
