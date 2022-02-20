@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    
 
     steps:
       - uses: actions/checkout@v2
@@ -33,7 +33,7 @@ jobs:
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v2.7.5
         env:
-          CC_TEST_REPORTER_ID: bf52b568d9b4bdd7f8e46f7922da17bf892ca7d084bb39f187d5b3851b2f5741
+          CC_TEST_REPORTER_ID: ${{ CODECLIMATE }}
         with:
           coverageCommand: make test-coverage
           debug: true

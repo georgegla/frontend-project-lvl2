@@ -5,8 +5,6 @@ install:
 run:
 	bin/nodejs-package.js 10
 
-test:
-	npm test
 lint:
 	npx eslint .
 
@@ -15,7 +13,7 @@ publish:
  with:
     debug: true
 test-coverage:
- 	NODE_OPTIONS=--experimental-vm-modules npx jest --coverageъ
+ 	NODE_OPTIONS=--experimental-vm-modules npx jest --coverage
 test-watch:
 	NODE_OPTIONS=--experimental-vm-modules npx jest --watch
 test:
