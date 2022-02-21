@@ -4,8 +4,8 @@ import _ from 'lodash';
 import { unpackingFiles, getFilePath } from './index.js';
 
 const genDiff = (filepath1, filepath2) => {
-  const existFilePath1 = getFilePath(filepath1);
-  const existFilePath2 = getFilePath(filepath2);
+  const existFilePath1 = getFilePath(String(filepath1));
+  const existFilePath2 = getFilePath(String(filepath2));
 
   if (!existFilePath1) {
     return `incorrect ${existFilePath1}`;
