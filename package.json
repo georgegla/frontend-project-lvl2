@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/georgegla/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/georgegla/frontend-project-lvl2/actions)",
   "bin": {
-    "gendiff": "bin/gendiff.js"
+    "gendiff": "bin/gendiff.js",
+    "parsers": "src/parsers.js"
   },
   "main": "src/index.js",
   "scripts": {
@@ -27,6 +28,7 @@
   "dependencies": {
     "commander": "^9.0.0",
     "fs": "^0.0.1-security",
+    "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },

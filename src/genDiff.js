@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 import _ from 'lodash';
-import { unpackingFiles, getFilePath } from './index.js';
+import getFilePath from './index.js';
+import parsingFiles from './parsers.js';
 
 const genDiff = (filepath1, filepath2) => {
   const existFilePath1 = getFilePath(String(filepath1));
@@ -15,8 +16,8 @@ const genDiff = (filepath1, filepath2) => {
     return `incorrect ${existFilePath2}`;
   }
 
-  const object1 = unpackingFiles(existFilePath1);
-  const object2 = unpackingFiles(existFilePath2);
+  const object1 = parsingFiles(existFilePath1);
+  const object2 = parsingFiles(existFilePath2);
 
   const keys = _.sortBy(_.union(_.keys(object1), _.keys(object2)));
 

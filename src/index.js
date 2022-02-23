@@ -1,5 +1,6 @@
-import { existsSync, readFileSync } from 'fs';
+import { existsSync } from 'fs';
 import { resolve } from 'path';
+// import yaml from 'js-yaml';
 
 const getFilePath = (filePath) => {
   if (existsSync(filePath)) {
@@ -11,12 +12,4 @@ const getFilePath = (filePath) => {
   return existsSync(absolutePath);
 };
 
-const unpackingFiles = (filePath) => {
-  const data = readFileSync(getFilePath(filePath), 'utf-8');
-
-  const object = JSON.parse(data.toString());
-
-  return object;
-};
-
-export { unpackingFiles, getFilePath };
+export default getFilePath;

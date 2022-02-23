@@ -6,3 +6,5 @@
 ### ASCIINEMA
 ### 1.Flat difference in json format: 
 [![asciicast](https://asciinema.org/a/qUGHvbrduSqcFChTH1pSAVQgf.svg)](https://asciinema.org/a/qUGHvbrduSqcFChTH1pSAVQgf)
+### 1.Flat difference in yml format:
+[![asciicast](https://asciinema.org/a/92wTz3kbgbg9p9KkMmX9i4GGK.svg)](https://asciinema.org/a/92wTz3kbgbg9p9KkMmX9i4GGK)
