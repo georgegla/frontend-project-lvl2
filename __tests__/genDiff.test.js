@@ -1,10 +1,10 @@
-import { fileURLToPath } from 'url';
 import path, { dirname } from 'path';
 import { test, expect } from '@jest/globals';
 import { readFileSync } from 'fs';
-
+import { fileURLToPath } from 'url';
 // eslint-disable-next-line import/no-named-as-default-member
 import genDiff from '../src/genDiff.js';
+// const { test, expect } = require('jest/globals')
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -18,6 +18,7 @@ test.each([
     format: 'stylish',
     expected: readFileSync(getFixturePath('result-stylish.txt')).toString(),
   },
+
   {
     file1: getFixturePath('file1.yml'),
     file2: getFixturePath('file2.json'),
