@@ -4,7 +4,6 @@ import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 // eslint-disable-next-line import/no-named-as-default-member
 import genDiff from '../src/genDiff.js';
-// const { test, expect } = require('jest/globals')
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -29,7 +28,3 @@ test.each([
 }) => {
   expect(genDiff(file1, file2, format)).toEqual(expected);
 });
-// node __tests__/genDiff.test.js
-// Если все хорошо, код молча выполнится.
-// Если есть ошибка, то будет выведено сообщение об ошибке.
-// npx jest --coverage
