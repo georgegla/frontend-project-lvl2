@@ -6,5 +6,11 @@
 ### ASCIINEMA
 ### 1.Flat difference in json format: 
 [![asciicast](https://asciinema.org/a/qUGHvbrduSqcFChTH1pSAVQgf.svg)](https://asciinema.org/a/qUGHvbrduSqcFChTH1pSAVQgf)
-### 1.Flat difference in yml format:
+### 2.Flat difference in yml format:
 [![asciicast](https://asciinema.org/a/92wTz3kbgbg9p9KkMmX9i4GGK.svg)](https://asciinema.org/a/92wTz3kbgbg9p9KkMmX9i4GGK)
+### 3.Recursive difference in stylish format (default): 
+[![asciicast](https://asciinema.org/a/RPVDVRIQCMO1E6xW6dA6IqzUo.svg)](https://asciinema.org/a/RPVDVRIQCMO1E6xW6dA6IqzUo)
+### 4.Recursive difference in plain format: 
+[![asciicast](https://asciinema.org/a/KcZrOjs2GOR3fmJyAlOX07buZ.svg)](https://asciinema.org/a/KcZrOjs2GOR3fmJyAlOX07buZ)
+### 5.Recursive difference in JSON format: 
+[![asciicast](https://asciinema.org/a/gcZVpFSw0JKGGCb1urGGH1PYS.svg)](https://asciinema.org/a/gcZVpFSw0JKGGCb1urGGH1PYS)

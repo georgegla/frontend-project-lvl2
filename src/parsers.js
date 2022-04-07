@@ -1,11 +1,9 @@
 import yaml from 'js-yaml';
 import path from 'path';
 import { readFileSync } from 'fs';
-import getFilePath from './index.js';
+import getFilePath from './file-utils.js';
 
 const parsingFiles = (filePath) => {
-  // const data = readFileSync(getFilePath(filePath), 'utf-8');
-  // const configPath = 'path/to/eslint';
   const format = path.extname(filePath);
   const data = readFileSync(getFilePath(filePath), 'utf-8');
 

@@ -9,7 +9,7 @@ const getFilePath = (filePath) => {
 
   const absolutePath = resolve(process.cwd(filePath));
 
-  return existsSync(absolutePath);
+  return existsSync(absolutePath).toString();
 };
 
 export default getFilePath;
