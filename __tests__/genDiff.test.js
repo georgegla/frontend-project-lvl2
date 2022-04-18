@@ -23,6 +23,12 @@ test.each([
     file2: getFixturePath('file2.json'),
     format: 'plain',
     expected: readFileSync(getFixturePath('result-plain.txt')).toString(),
+  },
+  {
+    file1: getFixturePath('file1.yml'),
+    file2: getFixturePath('file2.json'),
+    format: 'json',
+    expected: readFileSync(getFixturePath('result.json')).toString(),
   }])('genDiff', ({
   file1, file2, format, expected,
 }) => {

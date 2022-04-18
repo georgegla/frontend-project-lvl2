@@ -1,19 +1,22 @@
 import yaml from 'js-yaml';
-import path from 'path';
-import { readFileSync } from 'fs';
-import getFilePath from './file-utils.js';
+import { getFileExt, getFileContent } from './file-utils.js';
 
 const parsingFiles = (filePath) => {
-  const format = path.extname(filePath);
-  const data = readFileSync(getFilePath(filePath), 'utf-8');
+  const format = getFileExt(filePath);
+  const data = getFileContent(filePath);
 
   let parse;
 
-  if (format === '.json') {
-    parse = JSON.parse(data);
-  } else if (format === '.yml' || format === '.yaml') {
-    parse = yaml.load(data);
+  const parsers = { yml: yaml.load, yaml: yaml.load, json: JSON.parse };
+
+  if (format === 'json') {
+    parse = parsers.json(data);
+  } else if (format === 'yml' || format === 'yaml') {
+    parse = parsers.yaml(data);
+  } else {
+    throw new Error(`Ext '${data}' not found!`);
   }
+
   return parse;
 };
 export default parsingFiles;

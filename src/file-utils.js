@@ -1,15 +1,17 @@
-import { existsSync } from 'fs';
-import { resolve } from 'path';
+import { existsSync, readFileSync } from 'fs';
+import { resolve, extname } from 'path';
 // import yaml from 'js-yaml';
 
-const getFilePath = (filePath) => {
+export const getAbsolutePath = (filePath) => {
   if (existsSync(filePath)) {
     return filePath;
   }
 
-  const absolutePath = resolve(process.cwd(filePath));
+  const absolutePath = resolve(process.cwd(), filePath);
 
   return existsSync(absolutePath).toString();
 };
 
-export default getFilePath;
+export const getFileExt = (filePath) => extname(filePath).slice(1);
+
+export const getFileContent = (filePath) => readFileSync(getAbsolutePath(filePath), 'utf-8');

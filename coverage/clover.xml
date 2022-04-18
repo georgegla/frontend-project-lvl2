@@ -1,66 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1649361068503" clover="3.2.0">
-  <project timestamp="1649361068503" name="All files">
-    <metrics statements="99" coveredstatements="93" conditionals="36" coveredconditionals="29" methods="29" coveredmethods="28" elements="164" coveredelements="150" complexity="0" loc="99" ncloc="99" packages="2" files="8" classes="8"/>
+<coverage generated="1650272182839" clover="3.2.0">
+  <project timestamp="1650272182839" name="All files">
+    <metrics statements="103" coveredstatements="97" conditionals="36" coveredconditionals="29" methods="31" coveredmethods="31" elements="170" coveredelements="157" complexity="0" loc="103" ncloc="103" packages="2" files="8" classes="8"/>
     <package name="src">
-      <metrics statements="32" coveredstatements="30" conditionals="19" coveredconditionals="15" methods="5" coveredmethods="5"/>
+      <metrics statements="36" coveredstatements="33" conditionals="19" coveredconditionals="15" methods="7" coveredmethods="7"/>
       <file name="buildAST.js" path="/Users/george/frontend-project-lvl2/src/buildAST.js">
         <metrics statements="12" coveredstatements="12" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
-        <line num="3" count="10" type="stmt"/>
-        <line num="5" count="36" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="10" type="stmt"/>
-        <line num="9" count="26" type="cond" truecount="2" falsecount="0"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="13" count="22" type="stmt"/>
-        <line num="14" count="22" type="stmt"/>
-        <line num="16" count="22" type="cond" truecount="4" falsecount="0"/>
-        <line num="17" count="8" type="stmt"/>
-        <line num="20" count="14" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="6" type="stmt"/>
-        <line num="23" count="8" type="stmt"/>
+        <line num="3" count="15" type="stmt"/>
+        <line num="5" count="54" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="15" type="stmt"/>
+        <line num="9" count="39" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="13" count="33" type="stmt"/>
+        <line num="14" count="33" type="stmt"/>
+        <line num="16" count="33" type="cond" truecount="4" falsecount="0"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="20" count="21" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="9" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
       </file>
       <file name="file-utils.js" path="/Users/george/frontend-project-lvl2/src/file-utils.js">
-        <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="6" count="8" type="cond" truecount="1" falsecount="1"/>
-        <line num="7" count="8" type="stmt"/>
+        <line num="6" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="7" count="12" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
       </file>
       <file name="genDiff.js" path="/Users/george/frontend-project-lvl2/src/genDiff.js">
         <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="8" count="1" type="cond" truecount="0" falsecount="1"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
       </file>
       <file name="parsers.js" path="/Users/george/frontend-project-lvl2/src/parsers.js">
-        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
-        <line num="12" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="14" count="1" type="cond" truecount="2" falsecount="2"/>
-        <line num="15" count="1" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
+        <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="12" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="2" falsecount="2"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
       </file>
     </package>
     <package name="src.formatters">
-      <metrics statements="67" coveredstatements="63" conditionals="17" coveredconditionals="14" methods="24" coveredmethods="23"/>
+      <metrics statements="67" coveredstatements="64" conditionals="17" coveredconditionals="14" methods="24" coveredmethods="24"/>
       <file name="index.js" path="/Users/george/frontend-project-lvl2/src/formatters/index.js">
         <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="14" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="14" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
       </file>
       <file name="json.js" path="/Users/george/frontend-project-lvl2/src/formatters/json.js">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
       </file>
       <file name="plain.js" path="/Users/george/frontend-project-lvl2/src/formatters/plain.js">
         <metrics statements="26" coveredstatements="25" conditionals="8" coveredconditionals="7" methods="10" coveredmethods="10"/>
