@@ -5,18 +5,14 @@ const parsingFiles = (filePath) => {
   const format = getFileExt(filePath);
   const data = getFileContent(filePath);
 
-  let parse;
-
   const parsers = { yml: yaml.load, yaml: yaml.load, json: JSON.parse };
 
   if (format === 'json') {
-    parse = parsers.json(data);
-  } else if (format === 'yml' || format === 'yaml') {
-    parse = parsers.yaml(data);
-  } else {
-    throw new Error(`Ext '${data}' not found!`);
+    return parsers.json(data);
   }
-
-  return parse;
+  if (format === 'yml' || format === 'yaml') {
+    return parsers.yaml(data);
+  }
+  throw new Error(`Ext '${data}' not found!`);
 };
 export default parsingFiles;
