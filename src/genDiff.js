@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { getAbsolutePath } from './file-utils.js';
 import parsingFiles from './parsers.js';
 import buildAST from './buildAST.js';

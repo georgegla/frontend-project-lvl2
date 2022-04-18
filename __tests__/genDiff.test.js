@@ -2,7 +2,6 @@ import path, { dirname } from 'path';
 import { test, expect } from '@jest/globals';
 import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
-// eslint-disable-next-line import/no-named-as-default-member
 import genDiff from '../src/genDiff.js';
 
 const __filename = fileURLToPath(import.meta.url);
