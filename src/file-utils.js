@@ -1,6 +1,5 @@
 import { existsSync, readFileSync } from 'fs';
 import { resolve, extname } from 'path';
-// import yaml from 'js-yaml';
 
 export const getAbsolutePath = (filePath) => {
   if (existsSync(filePath)) {
